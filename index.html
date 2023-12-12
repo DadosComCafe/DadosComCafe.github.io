@@ -31,11 +31,51 @@
 
     <section id="projetos">
       <h2>Meus Projetos</h2>
+      <ul class="lista-projetos">
+        <li>
+            <h3>Dados com Café</h3>
+            <p class="descricao">Em uma das minhas oportunidades como Engenheiro de Dados, percebi que algumas das equipes não técnicas precisavam de mais acesso aos dados, uma vez que alguns relatórios eram elaborados por eles próprio.</br>
+                Então, percebendo o anceio destes, resolvi então dispor de 1 hora semanalmente para dar aulas de SQL, assim como docker para reproduzir o ambiente de produção na máquina local.</br> 
+                Desta forma, ao invés de me pedirem para elaborar uma query para acessar tais dados, me trouxessem a query pronta,e eu apenas a executava no banco de produção.</br>
+                Daí surgiu o canal no youtube: Dados Com Café, onde eu publico vídeos técnicos de como modelar bancos de dados, consultar tabelas, reproduzir o ambiente na máquina local, não apenas SQL, mas todo o envolto de banco de dados.</br>
+                <i>O canal pode ser acessado aqui:</i> <a href="https://www.youtube.com/@dadoscomcafe">Dados Com Café</a>
+            </p>
+        </li>
+        </br>
+        <li>
+            <h3>Consumindo api do Starwar, e modelando com pydantic</h3>
+            <p class="descricao">O Pydantic é uma ferramenta que é usada para a validação de dados. Como no python, por padrão não se declara o tipo das variávies, o pydantic pode resolver esta questão.</br>
+            Então, obtendo os valores da api do starwars, através da biblioteca requests, eu os recebo, e os aplico a models. Desta forma, cria-se um objeto pydantic para cada valor que é recebido da api. Então, 
+            declara-se a forma dos dados como classes com atributos.  
+            A vantagem, do objeto pydantic é a garantia de que ele vai corresponder a tipagem esperada, do contrário, vai quebrar. Quanto antes quebrar um dado errado, melhor!
+        Outra coisa bastante interessante que é apresentada neste repositório, é a facilidade de implementar herança entre os objetos pydantic, o que faz total sentido dependendo do tipo de dados.</br>
+            <i>O repositório pode ser acessado aqui:<a href="https://github.com/DadosComCafe/swapi_study"></i> swapi_study</a>
+        </p>
+        </li>
+    </br>
+        <li>
+            <h3>ETL marota com Airflow, GCP, Pydantic e mais um pouco</h3>
+            <p class="descricao">Neste projeto, desenvolvo um ETL, e crio bancos de dados com o docker: -se inicia com uma task que faz download do dataset, onde o nome do dataset o do author são consultados no mongo, então os arquivos do
+                zip baixado são enviados para o Storage, para ser usado como DataLake. Os dados do csv são "tratados" pelo pydantic, e estes dados, agora com tipos específicos, já que inicialmente são todos textos, são então enviados para um banco de 
+                dados postgres local. Estes dados do postgres, são então migrados para o BigQuery, onde fazendo integração com o Storage, é utilizado como DataWarehouse. O projeto ainda não terminou, portanto outras ferramentas do GCP também podem começar a ser
+                utilizadas.
+            </p>
+        </li>
+      </ul>
     </section>
 
     <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Algumas informações sobre você e suas habilidades.</p>
+      <h2>Prazer, um graduado em Física Médica que trabalha com programação!</h2>
+      <p>Terminei a graduação, entendendo que não me via trabalhando como físico médico. Então iniciei um mestrado, para também ver que a pesquisa, e o ambiente, não me interessavam. 
+        Mas foi durante o mestrado na área de biotecnologia, quando me ofereci para desenvolver um site para um congresso, onde ao final do evento, coletando feedbacks, pude perceber, que me vejo resolvendo problemas, e
+         gosto de utilizar a tecnologia para isto. Na semana seguinte, pedi o encerramento do meu mestrado.
+
+         Desde então, busco entender sobre as tecnologias, mas principalmente como posso utilizá-las, para resolver os problemas. 
+      </br>
+      Possuo experiência como desenvolvedor backend, e como engenheiro de dados. Mas nada me impede de encontrar outra forma de utilizar a tecnologia para resolver problemas.
+    </br>
+    <b>Obs</b>: Não dei match com front! 
+      </p>
     </section>
 
     <section id="contato">
@@ -43,10 +83,11 @@
       <p>Você pode me contatar em:</p>
       <ul>
         <li>Email: victor.santos.cd@gmail.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/victorsantossilva11/">Me segue lá, e bora trocar figurinhas!</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/victorsantossilva11/">victorsantossilva11</a> Me segue lá, e bora trocar figurinhas!</li>
       </ul>
     </section>
   </main>
+</br>
 
   <footer>
     <p>&copy; 2023 Victor Santos Silva</p>

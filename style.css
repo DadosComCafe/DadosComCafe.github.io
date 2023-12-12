@@ -10,12 +10,6 @@
     line-height: 1.6;
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  
   nav ul {
     list-style: none;
   }
@@ -39,13 +33,13 @@
   }
   
   footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
   
   .logo {
@@ -70,5 +64,41 @@
   header {
     background-color: #333;
     color: #fff;
-    padding: 120px 0 20px 120px; /* Ajusta o espaçamento para o conteúdo */
+    padding: 88px 0 20px 120px; /* Ajusta o espaçamento para o conteúdo */
   }
+
+
+  .lista-projetos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* .lista-projetos li {
+    margin-bottom: 20px;
+  }
+  
+  .lista-projetos li:hover .descricao {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 10px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, margin 0.3s ease-in-out;
+  }
+  
+  .descricao {
+    display: block;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, margin 0.3s ease-in-out;
+  }
+  
+  .lista-projetos h3:hover + .descricao {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, margin 0.3s ease-in-out;
+  } */
+  
