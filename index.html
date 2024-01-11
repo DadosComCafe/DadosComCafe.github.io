@@ -69,14 +69,24 @@
             <h3>ETL marota com Airflow, GCP</h3>
             <p class="descricao">Neste projeto, desenvolvo um ETL, e crio bancos de dados com o docker: -se inicia com uma task que faz download do dataset, onde o nome do dataset o do author são consultados no mongo, então os arquivos do
                 zip baixado são enviados para o Storage, para ser usado como DataLake. Os dados do csv são "tratados", e estes dados, agora com tipos específicos, já que inicialmente são todos textos, são então enviados para um banco de 
-                dados postgres local. Estes dados do postgres, são então migrados para o BigQuery, onde fazendo integração com o Storage, é utilizado como DataWarehouse. O projeto ainda não terminou, portanto outras ferramentas do GCP também podem começar a ser
-                utilizadas.
+                dados postgres local. Estes dados do postgres, são então migrados para o BigQuery. A ideia deste projeto é de entender melhor algumas features do airflow, e também os produtos usados, da GCP.
                 <i>O repositório pode ser acessado aqui:<a href="https://github.com/DadosComCafe/Study_Airflow"></i>Airflow ETL</a>
             </p>
         </li>
       </ul>
+
+    </br>
+    <li>
+        <h3>Download massivo de comentários</h3>
+        <p class="descricao">Neste projeto, utilizando a api do youtube, faz-se um get request para obter todo o conteúdo dos comentários, threads e likes de um vídeo específico. Então a ideia é, criar um datalake com o AWS S3 (onde o json de cada request será armazenado),
+          utilizar o pydantic para "modular" e ficar mais fácil a manipulação destes dados, aplicar alguma lógica que consiga extrair uma análise de sentimentos, e utilizar o RedShift como lugar onde construir o data warehouse. Projeto em fase inicial.
+            <i>O repositório pode ser acessado aqui:<a href="https://github.com/DadosComCafe/youtube_comments_download"></i>Airflow Youtube API create datalake</a>
+        </p>
+    </li>
+  </ul>
     </section>
 
+    
     <section id="sobre">
       <h2>Prazer, um graduado em Física Médica que trabalha com programação!</h2>
       <p>Terminei a graduação, entendendo que não me via trabalhando como físico médico. Então iniciei um mestrado, para também ver que a pesquisa, e o ambiente, não me interessavam. 
